@@ -1,22 +1,27 @@
 <template>
-  <div class="hello">
-    开工吧~
+  <div class="main">
+    <topHeader></topHeader>
+    <topMenu></topMenu>
   </div>
 </template>
 
 <script>
+import topHeader from "./header.vue";
+import topMenu from "./menu.vue";
 export default {
-  data () {
+  components: { topHeader, topMenu },
+  data() {
     return {
-      msg: ''
-    }
-  }
-}
+      msg: "",
+    };
+  },
+};
 </script>
 
 <!-- Add "scoped" attribute to limit CSS to this component only -->
 <style scoped>
-h1, h2 {
+h1,
+h2 {
   font-weight: normal;
 }
 ul {
