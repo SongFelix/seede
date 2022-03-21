@@ -3,10 +3,12 @@
     <div class="web-header">
       <div class="left">
         <div class="in-block main-title mr28">
-          <img class="" src="@/assets/xide.png" alt="" />
+          <img class="logo-flower" src="@/assets/flower.png" alt="" />
+          <img class="logo-img" src="@/assets/xide.png" alt="" />
+          <img class="menu-but" src="@/assets/menuBut.png" alt="" />
         </div>
 
-        <div class="in-block">
+        <div class="in-block main-tips">
           <div class="font20">设计咨询工作室</div>
           <div class="font20">Seeed Design&Art studio, Beijing</div>
         </div>
@@ -74,6 +76,55 @@ export default {};
   .flower {
     width: 48px;
     height: 63px;
+  }
+}
+@media screen and (min-width: 500px) {
+  .logo-flower{
+    display:none;
+  }
+  .menu-but{
+    display:none;
+  }
+  .logo-img{
+    width:144px;
+    height:59px;
+  }
+  .web-header {
+    padding: 0 80px;
+  }
+}
+@media screen and (max-width: 500px) {
+  .main-tips{
+    display: none;
+  }
+  .right{
+    display: none;
+  }
+  .logo-flower{
+    width:23px;
+    height:30px;
+    margin-right:5px;
+    display:inline-block;
+  }
+  .logo-img{
+    width:68px;
+    height:28px;
+    display:inline-block;
+  }
+  .web-header {
+    padding: 0;
+  }
+  .main-title{
+    width:auto !important;
+    margin-left:10px;
+  }
+  .menu-but{
+    display:inline-block;
+    width:25px;
+    height:21px;
+    position: absolute;
+    left: 87%;
+    top: 33%;
   }
 }
 .mr28 {

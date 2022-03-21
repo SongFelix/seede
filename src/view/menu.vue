@@ -46,32 +46,39 @@ export default {
 </script>
 
 <style lang="scss" scoped>
-.menu {
-  display: flex;
-  justify-content: flex-start;
-  height: 130px;
-  align-items: center;
-  padding: 0 80px;
-  .item-menu {
+@media screen and (max-width: 500px) {
+  .menu {
+    display:none;
+  }
+}
+@media screen and (min-width: 500px) {
+  .menu {
+    display: flex;
+    justify-content: flex-start;
     height: 130px;
-    line-height: 130px;
-    margin-right: 80px;
-  }
-  .menu-img {
-    background-repeat: no-repeat;
-    background-position: center;
-    background-blend-mode: darken;
-    width: 56px;
-    height: 50px;
-    vertical-align: middle;
-  }
-  .font16 {
-    font-family: "Source Han Sans CN";
-    font-style: normal;
-    font-weight: 400;
-    font-size: 16px;
-    color: #000000;
-    cursor: pointer;
+    align-items: center;
+    padding: 0 80px;
+    .item-menu {
+      height: 130px;
+      line-height: 130px;
+      margin-right: 80px;
+    }
+    .menu-img {
+      background-repeat: no-repeat;
+      background-position: center;
+      background-blend-mode: darken;
+      width: 56px;
+      height: 50px;
+      vertical-align: middle;
+    }
+    .font16 {
+      font-family: "Source Han Sans CN";
+      font-style: normal;
+      font-weight: 400;
+      font-size: 16px;
+      color: #000000;
+      cursor: pointer;
+    }
   }
 }
 </style>
